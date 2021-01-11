@@ -1,0 +1,135 @@
+[New Thread 0x7fb642280700 (LWP 6882)]
+[New Thread 0x7fb6c5d33700 (LWP 6929)]
+[New Thread 0x7fb695fb4700 (LWP 6931)]
+[New Thread 0x7fb651a39700 (LWP 6934)]
+[New Thread 0x7fb651238700 (LWP 6936)]
+[New Thread 0x7fb6567c0700 (LWP 6943)]
+[New Thread 0x7fb650537700 (LWP 6944)]
+[New Thread 0x7fb650336700 (LWP 6945)]
+[New Thread 0x7fb650135700 (LWP 6946)]
+[New Thread 0x7fb64ff34700 (LWP 6947)]
+[New Thread 0x7fb64fd33700 (LWP 6948)]
+[New Thread 0x7fb64fb32700 (LWP 6949)]
+[New Thread 0x7fb64f931700 (LWP 6950)]
+[Thread 0x7fb6c5d33700 (LWP 6929) exited]
+[Thread 0x7fb695fb4700 (LWP 6931) exited]
+[Thread 0x7fb651a39700 (LWP 6934) exited]
+[Thread 0x7fb651238700 (LWP 6936) exited]
+[New Thread 0x7fb651238700 (LWP 7037)]
+[Thread 0x7fb642280700 (LWP 6882) exited]
+[New Thread 0x7fb642280700 (LWP 7074)]
+[New Thread 0x7fb651a39700 (LWP 7075)]
+[Thread 0x7fb651a39700 (LWP 7075) exited]
+[Thread 0x7fb651238700 (LWP 7037) exited]
+[New Thread 0x7fb651238700 (LWP 7118)]
+[Thread 0x7fb651238700 (LWP 7118) exited]
+[New Thread 0x7fb651238700 (LWP 7122)]
+[Thread 0x7fb651238700 (LWP 7122) exited]
+[Thread 0x7fb642280700 (LWP 7074) exited]
+[New Thread 0x7fb642280700 (LWP 7186)]
+[New Thread 0x7fb651238700 (LWP 7187)]
+[New Thread 0x7fb651a39700 (LWP 7188)]
+[Thread 0x7fb651238700 (LWP 7187) exited]
+[Thread 0x7fb642280700 (LWP 7186) exited]
+[Detaching after fork from child process 7192]
+[Thread 0x7fb641a7f700 (LWP 6679) exited]
+[Inferior 1 (process 6095) detached]
+[New Thread 0x7f0876f46700 (LWP 8325)]
+[New Thread 0x7f08d6f34700 (LWP 8390)]
+[New Thread 0x7f0874f42700 (LWP 8392)]
+[New Thread 0x7f085f501700 (LWP 8396)]
+[New Thread 0x7f085e800700 (LWP 8402)]
+[New Thread 0x7f085e5ff700 (LWP 8403)]
+[New Thread 0x7f0859df2700 (LWP 8404)]
+[New Thread 0x7f0859bf1700 (LWP 8405)]
+[New Thread 0x7f08599f0700 (LWP 8406)]
+[New Thread 0x7f08597ef700 (LWP 8407)]
+[New Thread 0x7f08595ee700 (LWP 8408)]
+[New Thread 0x7f08593ed700 (LWP 8409)]
+[Thread 0x7f085f501700 (LWP 8396) exited]
+[Thread 0x7f08d6f34700 (LWP 8390) exited]
+[Thread 0x7f0876f46700 (LWP 8325) exited]
+[Detaching after vfork from child process 8498]
+[New Thread 0x7f0876f46700 (LWP 8499)]
+[Thread 0x7f0874f42700 (LWP 8392) exited]
+
+Thread 1 ".gnome-shell-wr" received signal SIGSEGV, Segmentation fault.
+0x00007f08dc9a6edf in meta_window_update_monitor () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+#0  0x00007f08dc9a6edf in meta_window_update_monitor () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#1  0x00007f08dc9ff564 in meta_window_wayland_update_main_monitor () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#2  0x00007f08dc9a6ef7 in meta_window_update_monitor () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#3  0x00007f08dc9a7106 in meta_window_move_resize_internal () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#4  0x00007f08dbba2abd in ffi_call_unix64 () from /nix/store/mqr1hbh7jmgpmdfd7bb0yr54brb1b9xy-libffi-3.3/lib/libffi.so.7
+No symbol table info available.
+#5  0x00007f08dbba179c in ffi_call_int () from /nix/store/mqr1hbh7jmgpmdfd7bb0yr54brb1b9xy-libffi-3.3/lib/libffi.so.7
+No symbol table info available.
+#6  0x00007f08dcc6d039 in gjs_invoke_c_function(JSContext*, Function*, JS::Handle<JSObject*>, JS::HandleValueArray const&, mozilla::Maybe<JS::MutableHandle<JS::Value> >, _GIArgument*) () from /nix/store/4k7lyjqv0wgs6wd6bq8wmfvjwypddqln-gjs-1.64.4/lib/libgjs.so.0
+No symbol table info available.
+#7  0x00007f08dcc6edf7 in function_call(JSContext*, unsigned int, JS::Value*) () from /nix/store/4k7lyjqv0wgs6wd6bq8wmfvjwypddqln-gjs-1.64.4/lib/libgjs.so.0
+No symbol table info available.
+#8  0x00007f08dab7eb9b in js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#9  0x00007f08dab705c6 in Interpret(JSContext*, js::RunState&) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#10 0x00007f08dab7deae in js::RunScript(JSContext*, js::RunState&) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#11 0x00007f08dab7e935 in js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#12 0x00007f08dab7f7cf in js::Call(JSContext*, JS::Handle<JS::Value>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#13 0x00007f08daf24dd0 in JS_CallFunction(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSFunction*>, JS::HandleValueArray const&, JS::MutableHandle<JS::Value>) () from /nix/store/arffxxmzks3a7m4zzvfigc730695xf5m-spidermonkey-68.10.0/lib/libmozjs-68.so
+No symbol table info available.
+#14 0x00007f08dcc6730c in gjs_closure_invoke(_GClosure*, JS::Handle<JSObject*>, JS::HandleValueArray const&, JS::MutableHandle<JS::Value>, bool) () from /nix/store/4k7lyjqv0wgs6wd6bq8wmfvjwypddqln-gjs-1.64.4/lib/libgjs.so.0
+No symbol table info available.
+#15 0x00007f08dcc9316c in closure_marshal(_GClosure*, _GValue*, unsigned int, _GValue const*, void*, void*) () from /nix/store/4k7lyjqv0wgs6wd6bq8wmfvjwypddqln-gjs-1.64.4/lib/libgjs.so.0
+No symbol table info available.
+#16 0x00007f08dd67eec2 in g_closure_invoke () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007f08dd691dc4 in signal_emit_unlocked_R () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x00007f08dd69cfef in g_signal_emit_valist () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00007f08dd69d97f in g_signal_emit () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00007f08dc9ae305 in meta_workspace_add_window () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#21 0x00007f08dc9a31db in set_workspace_state () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#22 0x00007f08dc9a97e6 in _meta_window_shared_new () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#23 0x00007f08dca00452 in meta_window_wayland_new () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#24 0x00007f08dc9fe2a8 in xdg_surface_constructor_get_toplevel () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#25 0x00007f08dbba2abd in ffi_call_unix64 () from /nix/store/mqr1hbh7jmgpmdfd7bb0yr54brb1b9xy-libffi-3.3/lib/libffi.so.7
+No symbol table info available.
+#26 0x00007f08dbba179c in ffi_call_int () from /nix/store/mqr1hbh7jmgpmdfd7bb0yr54brb1b9xy-libffi-3.3/lib/libffi.so.7
+No symbol table info available.
+#27 0x00007f08dc384370 in wl_closure_invoke () from /nix/store/2jfbxljx39mg2nd6614iikdpcgi1jc3i-wayland-1.18.0/lib/libwayland-server.so.0
+No symbol table info available.
+#28 0x00007f08dc3807f2 in wl_client_connection_data () from /nix/store/2jfbxljx39mg2nd6614iikdpcgi1jc3i-wayland-1.18.0/lib/libwayland-server.so.0
+No symbol table info available.
+#29 0x00007f08dc382402 in wl_event_loop_dispatch () from /nix/store/2jfbxljx39mg2nd6614iikdpcgi1jc3i-wayland-1.18.0/lib/libwayland-server.so.0
+No symbol table info available.
+#30 0x00007f08dc9de4c7 in wayland_event_source_dispatch () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#31 0x00007f08dd59444d in g_main_context_dispatch () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007f08dd5946d0 in g_main_context_iterate.isra () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00007f08dd5949a3 in g_main_loop_run () from /nix/store/m7f15ibdd637dy3aysakk47xkqzj956l-glib-2.64.5/lib/libglib-2.0.so.0
+No symbol table info available.
+#34 0x00007f08dc992604 in meta_run () from /nix/store/dij6xv5ld3c3vkvmkv1qk00chhc58c8i-mutter-3.36.5/lib/libmutter-6.so.0
+No symbol table info available.
+#35 0x000000000040383d in main ()
+No symbol table info available.
+A debugging session is active.
+
+	Inferior 1 [process 7612] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 7612) detached]
