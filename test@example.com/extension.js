@@ -13,14 +13,12 @@ class Extension {
                 log("Trying to move the window!")
 
                 if(immediatelyMove){
-                    log("Moving!")
                     window.move_frame(false, 100, 100);
                 }else{
                     imports.gi.GLib.timeout_add(
                         imports.gi.GLib.PRIORITY_LOW,
                         500,
                         function(){
-                            log("Moving!")
                             window.move_frame(false, 100, 100);
                             return false;
                         }
