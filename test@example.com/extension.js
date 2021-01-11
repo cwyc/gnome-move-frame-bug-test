@@ -1,6 +1,6 @@
 //true to immediately move the window upon getting the window-added signal. will crash.
 //false to wait 500ms before trying to move the window. will function fine.
-var immediatelyMove = false;
+var immediatelyMove = true;
 
 class Extension {
     constructor() {
