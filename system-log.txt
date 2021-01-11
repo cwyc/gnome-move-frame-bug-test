@@ -1,12 +1,7 @@
--- Logs begin at Fri 2021-01-08 15:52:24 EST, end at Mon 2021-01-11 16:32:32 EST. --
-Jan 11 16:31:29 nixos dbus-daemon[795]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.281' (uid=1000 pid=8498 comm="/nix/store/r7i8h25vsa4sc5mzx7kdzgfr9j09k2fk-gnome-")
-Jan 11 16:31:29 nixos systemd[1]: Starting Hostname Service...
-Jan 11 16:31:29 nixos dbus-daemon[795]: [system] Successfully activated service 'org.freedesktop.hostname1'
-Jan 11 16:31:29 nixos systemd[1]: Started Hostname Service.
 Jan 11 16:31:29 nixos .gnome-shell-wr[7612]: Trying to move the window!
 Jan 11 16:31:29 nixos .gnome-shell-wr[7612]: Trying to move the window!
 Jan 11 16:31:29 nixos gnome-shell[7612]: == Stack trace for context 0x1e6c500 ==
-Jan 11 16:31:29 nixos gnome-shell[7612]: #0        2f74ec0 i   /home/peter/.local/share/gnome-shell/extensions/test@example.com/extension.js:30 (f25d54de088 @ 34)
+Jan 11 16:31:29 nixos gnome-shell[7612]: #0        2f74ec0 i   /home/cwyc/.local/share/gnome-shell/extensions/test@example.com/extension.js:30 (f25d54de088 @ 34)
 Jan 11 16:31:29 nixos kernel: .gnome-shell-wr[7612]: segfault at 18 ip 00007f08dc9a6edf sp 00007ffe63b3b750 error 4 in libmutter-6.so.0.0.0[7f08dc91a000+10b000]
 Jan 11 16:31:29 nixos kernel: Code: 0e 02 00 e9 28 ff ff ff 0f 1f 00 48 89 ef e8 58 bd ff ff e9 b8 fe ff ff 0f 1f 00 41 55 41 54 55 48 89 fd 53 89 f3 48 83 ec 08 <48> 8b 47 18 4c 8b 67 30 4c 8b a8 68 02 00 00 48 8b 07 ff 90 f8 00
 Jan 11 16:31:29 nixos systemd[1]: Started Process Core Dump (PID 8511/UID 0).
